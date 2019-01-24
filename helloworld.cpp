@@ -8,6 +8,7 @@ int main()
 {
 
   cout << "Hello World!\n";
+  keep_window_open(); // An addition to the original program as per the Chapter 2 drill exercise
   return 0;
 
 }

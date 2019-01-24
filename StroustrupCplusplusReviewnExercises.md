@@ -158,10 +158,17 @@ and also to get your machine set up to write/test/execute programs
     - Parameter list
     - Function body
 
-int main()
+```
+v' return type
+    v' function name
+int main('parameter list')
+
 {
 
-}
+function body
+
+} 
+```
 
 Not bad. I pretty much got all the parts right, without exactly remembering the correct terminology. I even inadvertently wrote exactly the most basic function *int main() {}*
 
@@ -214,6 +221,8 @@ Here we go!
 2. I feel confident I can skip these exercises, despite Stroustrups admonitions. 
     - I need to learn to 'think' like a computer, ie. I need everything spelled out in excruciating detail
     - I don't need to bake blueberry muffins to achieve this
+
+> The vast majority of time spent programming is spent fixing broken/incomplete code. If it's working, we don't need to look at it!
 
 Chapter 3
 =========
