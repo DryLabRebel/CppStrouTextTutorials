@@ -139,10 +139,10 @@ ______
 pp 86
 
 Go to Appendix C
-- Get set up to compile, link and run programs in mac terminal emulator - "Check" 
-- Download the "std_lib_facilities.h" from stroustrup.com/Programming - "Check" 
-- Write, compile and execute Hello World program - "Check" 
-- Only problems I ran into were getting *std_lib_facilities.h* to work correctly now it does
+*Check* (25-01-2019) - - Get set up to compile, link and run programs in mac terminal emulator - "Check" 
+*Check* (25-01-2019) - - Download the "std_lib_facilities.h" from stroustrup.com/Programming - "Check" 
+*Check* (25-01-2019) - - Write, compile and execute Hello World program - "Check" 
+*Check* (25-01-2019) - - Only problems I ran into were getting *std_lib_facilities.h* to work correctly now it does
 
 ### Review questions ###
 
@@ -215,7 +215,8 @@ Here we go!
     - I need to learn to 'think' like a computer, ie. I need everything spelled out in excruciating detail
     - I don't need to bake blueberry muffins to achieve this
 
-# Chapter 3 #
+Chapter 3
+=========
 
 So... When cin is executed, the keyboard key <enter> has a designated purpose, which is to indicate the conclusion of the character string
     - How does 'C++' tell the computer that's what it wants <enter> to do once the character string is complete?
