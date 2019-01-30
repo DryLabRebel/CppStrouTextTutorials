@@ -5,7 +5,8 @@
 [//]: # ( #include <wchar.h> )
 [//]: # (          ^~~~~~~~~ )
 
-______ 
+---
+
 
 ## Chapter 1 ##
 
@@ -130,7 +131,7 @@ Software is everywhere. It helps society.
 
 Be part of the solution, not the problem. There is unparalelled diversity in software development.
 
-______ 
+---
 
 # Chapter 2 #
 
@@ -229,15 +230,28 @@ Chapter 3
 
 So... When cin is executed, the keyboard key <enter> has a designated purpose, which is to indicate the conclusion of the character string
     - How does 'C++' tell the computer that's what it wants <enter> to do once the character string is complete?
+      - There must be some builtin or default function which includes intructions for what <enter> does in the program
     - Needs to know what to do after you press <enter> too.
         - Save string contents, move to next statement in the program, execute that statement
 
 [//]: # ( Repetition provides opportunity for errors! )
 
 The statement that calls an object and gives it a type is called a *definition* statement
-The object that is created is itself called a *variable*
 
-[//]: # ( Note: use F and f more!!! fX - search forward for X. ; - repeat search. , - repeat search backwards. )
+Object - A part of the memory used for storing information
+
+Variable - a named object
+
+C++ is notoriously picky about object types
+
+string types *only* accept strings (i.e. something surrounded by "*double* quotes")
+int only takes integers (whole numbers)
+double takes floating point numbers (decimal places)
+char takes a single character enclosed in *single* quotes eg. 'a'
+bool takes boolean logic, it. true or false (literally 'true' or 'false', without the single quotes)
+
+So a single character inside double quotes is technically a "string" (although it would have to be declared as a string variable when first initialized)
+  - i.e. if a string is enclosed in single quotes it will throw an error, and vice versa for characters inside double quotes!!
 
 specific object types can have specific operations performed on them.
 
@@ -247,42 +261,75 @@ Interesting - short for 'double-precision floating point' - "the computer's appr
 
 >> 'get from'
 
+Interesting - When prompted for two inputs, into two variables, any <space> <tab> or <newline> will distinguish between the first input, and the second.
+
+So
+Geoff<cr>34
+OR
+Geoff<space>34
+Will both work.
+
 [//]: # ( always? provide a default value to a variable )
 
 <C-d>   - in UNIX/Linux indicates an 'end of input' character. Interesting.
 
 #### Stroustrups top naming tips ####
-- Cannot use 'keywords'
-- Shouldn't use names of libraries and standards, will lead to trouble
-- shouldn't use shortened names or acronyms
-- Should be obvious and descriptive, long (but not too long, 2 words is good), unique
-- Never use all capitals
-- Convention is to use 'underscore' as word separators (C++ convention?)
-- Begin types with Capital letters, as this is a nice contrast to all builtin standards, libraries, keywords, etc. (which do not use capital letters)
+
+- Cannot use 'keywords'  
+- Shouldn't use names of libraries and standards, will lead to trouble  
+- shouldn't use shortened names or acronyms  
+- Should be obvious and descriptive, long (but not too long, 2 words is good), unique  
+- Never use all capitals  
+- Convention is to use 'underscore' as word separators (C++ convention?)  
+- Begin types with Capital letters, as this is a nice contrast to all builtin standards, libraries, keywords, etc. (which do not use capital letters)  
 
 A *type* defines a set of possible values and a set of operators (int, string, || && + - etc.)
 [//]: # ( Type tells you what an object is going to be used for )
+
 An *object* is some memory that holds a given *type*
-[//]: # ( Object is the physical [or abstract?] space that is being defined by the type )
+[//]: # ( Object is the physical - or digital? - space that is being defined by the type )
+
 A *value* is a set of bits interpreted in memory by a given *type* (does this mean that certain binary *digits* are/can be assigned to different pieces of information depending on the *type* it is assigned to?)
 [//]: # ( Value is the information that is stored in the object, and interpreted by the type )
+
 A *variable* is a named *object*
 [//]: # ( An object that actually exists and has a name )
+
 A *declaration* is a statement that gives a name to an *object*
 [//]: # ( How you go about giving your object a name - It takes an object and turns it into a variable )
+
 A *definition* is a *declaration* that sets aside memory for an *object*
 [//]: # ( A declaration that actually exists and declares the existence of an object which it makes space for in memory )
 
 *Every int is of the same size; that is, the compiler sets aside the same fixed amount of memory for each int. On a typical desktop computer, that amount is 4 bytes (32 bits)*
-- Seems important to know.
-- Every integer is 4 bytes, which is 32 bits - 8 bits in a byte
+
+Byte  == 8 bits
+
+Char  == 1 byte (8 bits)
+
+Int   == 4 bytes (32 bits)
+
+So characters can easily be converted to ints (every character has at least one corresponding Int)
+
 - 00000000 00000000 00000000 01111000 == 4 bytes == 32 bits == one integer
+
 - Every character is only 1 byte!
 - 00000000 == 1 byte == 8 bits == one char
 
-# Type safety is super important #
+Ch 3 Summary
+============
 
-[//]: # ( INITIALIZE YOUR VARIABLES! )
+> Type safety is super important
+
+> Always initialize your variables with a default value!
+
+> Chars can be converted to Ints, but Ints shouldn't be converted to Chars
+
+--- 
+--- 
+[//]: # ( Currently on: Page 65 )
+--- 
+--- 
 
 char c = 'x';
 int i1 = c;
@@ -292,7 +339,14 @@ Interesting. You can assign a value to an object by declaring another variable, 
     - Is one method preferred
     - Or are there situations where they are each more suited, if so what?
 
-______
+Note: Assignment and initialization are different.
+
+A subtle but important difference. Initialization initialises a variable (and should always declare an input
+
+A note on conditions: A condition, inside a conditional, is designed to execute the code block, 'if the condition is a success', not necessarily if it is 'true'. If arithmetic operations give results that don't meet the condition, it fails, but also, if a simple operation is successfully executed this can also execute the code block.. does that make sense?
+
+---
+
 [//]: # ( NOTE: Use {} list notation from now on, instead of = for declaring and defining variables!! )
 
 #### Drill #### 
