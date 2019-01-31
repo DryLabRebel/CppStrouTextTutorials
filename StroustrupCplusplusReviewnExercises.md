@@ -250,6 +250,8 @@ double takes floating point numbers (decimal places)
 char takes a single character enclosed in *single* quotes eg. 'a'
 bool takes boolean logic, it. true or false (literally 'true' or 'false', without the single quotes)
 
+[//]: # ( Note: Apparently simple text inserted directly into 'cout' can be enclosed in single quotes. But is this best practise?? )
+
 So a single character inside double quotes is technically a "string" (although it would have to be declared as a string variable when first initialized)
   - i.e. if a string is enclosed in single quotes it will throw an error, and vice versa for characters inside double quotes!!
 
@@ -275,7 +277,7 @@ Will both work.
 
 #### Stroustrups top naming tips ####
 
-- Cannot use 'keywords'  
+- Cannot use 'keywords' - compiler will reject them!  
 - Shouldn't use names of libraries and standards, will lead to trouble  
 - shouldn't use shortened names or acronyms  
 - Should be obvious and descriptive, long (but not too long, 2 words is good), unique  
@@ -283,23 +285,23 @@ Will both work.
 - Convention is to use 'underscore' as word separators (C++ convention?)  
 - Begin types with Capital letters, as this is a nice contrast to all builtin standards, libraries, keywords, etc. (which do not use capital letters)  
 
-A *type* defines a set of possible values and a set of operators (int, string, || && + - etc.)
-[//]: # ( Type tells you what an object is going to be used for )
+A *type* defines a set of possible values and a set of operators (int, string, || && + - etc.)  
+> Type tells you what an object is going to be used for
 
-An *object* is some memory that holds a given *type*
-[//]: # ( Object is the physical - or digital? - space that is being defined by the type )
+An *object* is some memory that holds a given *type*  
+> Object is the physical - or digital? - space that is being defined by the type
 
-A *value* is a set of bits interpreted in memory by a given *type* (does this mean that certain binary *digits* are/can be assigned to different pieces of information depending on the *type* it is assigned to?)
-[//]: # ( Value is the information that is stored in the object, and interpreted by the type )
+A *value* is a set of bits interpreted in memory by a given *type* (does this mean that certain binary *digits* are/can be assigned to different pieces of information depending on the *type* it is assigned to?)  
+> Value is the information that is stored in the object, and interpreted by the type
 
-A *variable* is a named *object*
-[//]: # ( An object that actually exists and has a name )
+A *variable* is a named *object*  
+> An object that actually exists and has a name
 
-A *declaration* is a statement that gives a name to an *object*
-[//]: # ( How you go about giving your object a name - It takes an object and turns it into a variable )
+A *declaration* is a statement that gives a name to an *object*  
+> How you go about giving your object a name - It takes an object and turns it into a variable
 
-A *definition* is a *declaration* that sets aside memory for an *object*
-[//]: # ( A declaration that actually exists and declares the existence of an object which it makes space for in memory )
+A *definition* is a *declaration* that sets aside memory for an *object*  
+> A declaration that actually exists and declares the existence of an object which it makes space for in memory
 
 *Every int is of the same size; that is, the compiler sets aside the same fixed amount of memory for each int. On a typical desktop computer, that amount is 4 bytes (32 bits)*
 
@@ -308,6 +310,10 @@ Byte  == 8 bits
 Char  == 1 byte (8 bits)
 
 Int   == 4 bytes (32 bits)
+
+Double== 8 bytes (64 bits)
+
+String== Can vary, has 2 sections - number of 'chars' and the values themselves
 
 So characters can easily be converted to ints (every character has at least one corresponding Int)
 
