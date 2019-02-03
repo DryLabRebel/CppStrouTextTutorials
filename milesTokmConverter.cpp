@@ -6,10 +6,11 @@ int main()
 {
     cout << "Please enter any number in miles, to convert into kilometers:\n";
     double Miles {0};
+    double conversion {1.609};
     cin >> Miles;
-    cout << "The value you enter was " << Miles << " miles.\n";
+    cout << "You entered: " << Miles << " miles.\n";
     double Kilometers {0};
-    Kilometers = Miles*1.609;
+    Kilometers = Miles*conversion;
     cout << "This equals: " << Kilometers << " kilometers.\n";
 
     return 0;

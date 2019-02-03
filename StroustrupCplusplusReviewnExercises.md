@@ -331,6 +331,8 @@ Ch 3 Summary
 
 > Chars can be converted to Ints, but Ints shouldn't be converted to Chars
 
+> Always use {} notation to declaring variables, unless you *want* to narrow a conversion.
+
 --- 
 --- 
 [//]: # ( Currently on: Page 65 )

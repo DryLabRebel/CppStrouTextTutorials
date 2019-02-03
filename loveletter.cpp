@@ -6,8 +6,8 @@
 int main() {
 
     string first_name {"no_name"}; // first_name is a variable of type string 
-    string child1 {"jack"};
-    string child2 {"hannah"};
+    string child1 {"Jack"};
+    string child2 {"Hannah"};
     char child1_sex {0};
     char child2_sex {0};
     int child1_age {0};
@@ -29,9 +29,9 @@ int main() {
     cout << "\nAnd Sex (m or f):\n";
     cin >> child2_sex;
 
-    cout << "\n    To my beautiful wife " << first_name << ",\n";
+    cout << "\n    To my beautiful wife. Hi " << first_name << ",\n";
     cout << "\n";
-    cout << "I love you so much more than I probably let on. I shudder to think how much less of a man I would be if I didn't have you in my life.\n";
+    cout << "I love you so much more than I probably let on my sexy wife. I shudder to think how much less of a man I would be if I didn't have you in my life.\n";
     cout << "You are amazing to me. I don't appreciate the effort you put in to raising ";
     cout << child1 << " and " << child2 << ".\n";
     cout << "Nor the things I wouldn't know if I didn't have you.\n";
