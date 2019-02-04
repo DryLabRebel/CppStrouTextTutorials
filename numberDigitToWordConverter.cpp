@@ -44,4 +44,5 @@ int main()
 }
     
 
+// Definitely don't need the int variable. could just print the phraze with the number. But including the int seems more general, and precise.
 

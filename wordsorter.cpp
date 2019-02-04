@@ -1,4 +1,4 @@
-// This program accepts an input of number and orders them from highest to lowest
+// This program accepts an input of strings and orders them from highest to lowest
 
 #include "std_lib_facilities.h"
 
