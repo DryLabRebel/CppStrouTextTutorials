@@ -24,9 +24,18 @@ Wouldn't it be better to just initialize 9 and 5 first?
 
 No I guess not, since it's a conversion formula, they're just values in the formula.
 
-**Always use floating point numbers unless you have good reason not to**
+*Always use floating point numbers unless you have good reason not to*
 
 [//]: # ( Memorise the celcius to faregnheight conversion! )
+
+Conversion
+----------
+
+We can mix types
+
+Last time I did these, the stuff I've already learned must've been pretty fresh in my mind. It must've easily occured to me to convert my values into characters
+
+
 
 
 

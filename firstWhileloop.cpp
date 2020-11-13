@@ -13,6 +13,7 @@ int main()
 
     while(a<123)
     {
+        // converts a to char, prints a and b
         char b = a;
         cout << a << "\t" << b << "\n";
         ++a;
